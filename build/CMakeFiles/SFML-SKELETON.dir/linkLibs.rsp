@@ -1,0 +1,1 @@
+  -L"C:/Users/cumon/Desktop/GameDev/C++/SFML/sfml-skeleton/SFML/lib"  -lsfml-graphics -lsfml-audio -lsfml-network -lsfml-window -lsfml-system -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

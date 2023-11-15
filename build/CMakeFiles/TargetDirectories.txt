@@ -1,0 +1,3 @@
+C:/Users/cumon/Desktop/GameDev/C++/SFML/sfml-skeleton/build/CMakeFiles/SFML-SKELETON.dir
+C:/Users/cumon/Desktop/GameDev/C++/SFML/sfml-skeleton/build/CMakeFiles/edit_cache.dir
+C:/Users/cumon/Desktop/GameDev/C++/SFML/sfml-skeleton/build/CMakeFiles/rebuild_cache.dir

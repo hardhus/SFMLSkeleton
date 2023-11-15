@@ -1,0 +1,32 @@
+cmake_minimum_required(VERSION 3.27.5)
+project(SFML-SKELETON)
+
+file(GLOB_RECURSE SRC_FILES src/*.cpp)
+
+# SFML kütüphanelerinin dizini
+set(SFML_INCLUDE_DIR "SFML/include")
+set(SFML_LIBRARY_DIR "SFML/lib")
+
+# Include ve kütüphane dizinlerini projeye ekleme
+include_directories(${SFML_INCLUDE_DIR})
+link_directories(${SFML_LIBRARY_DIR})
+
+# Kendi dosyalarınızın dizini
+set(MYLIB_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/MYLIB/include")
+set(MYLIB_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/MYLIB/src")
+
+file(GLOB MY_HEADERS ${MYLIB_INCLUDE_DIR}/*.hpp)
+file(GLOB MY_SOURCES ${MYLIB_SOURCE_DIR}/*.cpp)
+
+include_directories(${MYLIB_INCLUDE_DIR}) # Include dizinini ekler
+
+# Çıktı dizinini belirleme
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
+
+# Debug ve Release için ayrı çıktı dizinlerini belirleme
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG "${CMAKE_BINARY_DIR}/bin/debug")
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE "${CMAKE_BINARY_DIR}/bin/release")
+
+# Projeye SFML kütüphanelerini ve kendi dosyalarınızı ekleme
+add_executable(${PROJECT_NAME} ${SRC_FILES} ${MY_HEADERS} ${MY_SOURCES})
+target_link_libraries(${PROJECT_NAME} sfml-graphics sfml-audio sfml-network sfml-window sfml-system)

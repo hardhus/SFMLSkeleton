@@ -1,0 +1,14 @@
+[
+{
+  "directory": "C:/Users/cumon/Desktop/GameDev/C++/SFML/sfml-skeleton/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/SFML-SKELETON.dir/includes_CXX.rsp -O3 -DNDEBUG -o CMakeFiles\\SFML-SKELETON.dir\\src\\main.cpp.obj -c C:\\Users\\cumon\\Desktop\\GameDev\\C++\\SFML\\sfml-skeleton\\src\\main.cpp",
+  "file": "C:/Users/cumon/Desktop/GameDev/C++/SFML/sfml-skeleton/src/main.cpp",
+  "output": "CMakeFiles/SFML-SKELETON.dir/src/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/cumon/Desktop/GameDev/C++/SFML/sfml-skeleton/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/SFML-SKELETON.dir/includes_CXX.rsp -O3 -DNDEBUG -o CMakeFiles\\SFML-SKELETON.dir\\MYLIB\\src\\Game.cpp.obj -c C:\\Users\\cumon\\Desktop\\GameDev\\C++\\SFML\\sfml-skeleton\\MYLIB\\src\\Game.cpp",
+  "file": "C:/Users/cumon/Desktop/GameDev/C++/SFML/sfml-skeleton/MYLIB/src/Game.cpp",
+  "output": "CMakeFiles/SFML-SKELETON.dir/MYLIB/src/Game.cpp.obj"
+}
+]
